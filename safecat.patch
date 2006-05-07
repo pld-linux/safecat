@@ -18,10 +18,8 @@
  auto_home.o: \
  compile auto_home.c
 --- safecat-1.13/hier.c~	2001-04-14 13:09:54.000000000 +0200
-+++ safecat-1.13/hier.c	2006-05-07 22:20:48.498547001 +0300
-@@ -7,11 +7,12 @@
-   c(auto_home,"bin","safecat",-1,-1,0755);
-   c(auto_home,"bin","maildir",-1,-1,0755);
++++ safecat-1.13/hier.c	2006-05-07 22:25:03.134232019 +0300
+@@ -9,9 +9,7 @@
  
 -  d(auto_home,"man",-1,-1,02755);
 -  d(auto_home,"man/man1",-1,-1,02755);
@@ -33,9 +31,6 @@
 +  d(auto_home,"share/man",-1,-1,02755);
 +  d(auto_home,"share/man",-1,-1,02755);
 +  d(auto_home,"share/man/man1",-1,-1,02755);
-+  d(auto_home,"share/man/cat1",-1,-1,02755);
 +  c(auto_home,"share/man/man1","safecat.1",-1,-1,0644);
-+  c(auto_home,"share/man/cat1","safecat.0",-1,-1,0644);
 +  c(auto_home,"share/man/man1","maildir.1",-1,-1,0644);
-+  c(auto_home,"share/man/cat1","maildir.0",-1,-1,0644);
  }
