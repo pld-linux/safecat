@@ -23,7 +23,7 @@ safecat, then the file is guaranteed to be complete.
 %patch0 -p1
 
 %build
-echo '%{__cc} %{rpmcflags}' > conf-cc
+echo '%{__cc} %{rpmcflags} -D_LARGEFILE64_SOURCE' > conf-cc
 echo '%{__cc}' > conf-ld
 echo '%{_prefix}' > conf-root
 %{__make} -j1
