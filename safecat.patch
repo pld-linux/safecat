@@ -1,4 +1,3 @@
-diff -durN safecat-1.11.orig/maildir.sh safecat-1.11/maildir.sh
 --- safecat-1.11.orig/maildir.sh	2003-04-14 16:03:09.000000000 +0200
 +++ safecat-1.11/maildir.sh	2003-04-14 16:03:56.000000000 +0200
 @@ -1,4 +1,4 @@
@@ -7,3 +6,14 @@ diff -durN safecat-1.11.orig/maildir.sh safecat-1.11/maildir.sh
  exec \
 -HOME/bin/safecat "$1"/tmp "$1"/new
 +/usr/bin/safecat "$1"/tmp "$1"/new
+--- ./Makefile.orig	Tue Aug 17 04:50:09 2004
++++ ./Makefile	Wed Sep 22 16:48:02 2004
+@@ -31,7 +31,7 @@
+ 
+ auto_home.c: \
+ auto-str conf-root
+-	./auto-str auto_home `head -1 conf-root` > auto_home.c
++	./auto-str auto_home $(RPM_BUILD_ROOT)`head -1 conf-root` > auto_home.c
+ 
+ auto_home.o: \
+ compile auto_home.c
