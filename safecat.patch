@@ -13,7 +13,7 @@
  auto_home.c: \
  auto-str conf-root
 -	./auto-str auto_home `head -1 conf-root` > auto_home.c
-+	./auto-str auto_home $(RPM_BUILD_ROOT)`head -1 conf-root` > auto_home.c
++	./auto-str auto_home $(DESTDIR)`head -1 conf-root` > auto_home.c
  
  auto_home.o: \
  compile auto_home.c
