@@ -1,4 +1,5 @@
 Summary:	safecat: Write Data Safely to a Directory
+Summary(pl):	safecat - bezpieczny zapis danych do katalogu
 Name:		safecat
 Version:	1.13
 Release:	1
@@ -17,6 +18,15 @@ offered two assurances. First, if safecat returns successfully, then
 all data is guaranteed to be saved in the destination directory.
 Second, if a file exists in the destination directory, placed there by
 safecat, then the file is guaranteed to be complete.
+
+%description -l pl
+safecat implementuje algorytm maildir Dana Bernsteina kopiuj±c
+bezpiecznie dane ze standardowego wej¶cia do podanego katalogu.
+U¿ywaj±c safecata u¿ytkownik mo¿e byæ pewien dwóch rzeczy. Po
+pierwsze, je¶li safecat zakoñczy dzia³anie z sukcesem, gwarantowane
+jest, ¿e wszystkie dane zosta³y zapisane w katalogu docelowym. Po
+drugie, je¶li plik zosta³ umieszczony w katalogu docelowym przez
+safecata, gwarantowane jest, ¿e plik jest kompletny.
 
 %prep
 %setup -q
