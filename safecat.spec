@@ -50,6 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc CHANGES README
 %attr(755,root,root) %{_bindir}/maildir
 %attr(755,root,root) %{_bindir}/safecat
 %{_mandir}/man1/maildir.1*
