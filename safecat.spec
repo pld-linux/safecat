@@ -1,5 +1,5 @@
 Summary:	safecat: Write Data Safely to a Directory
-Summary(pl.UTF-8):   safecat - bezpieczny zapis danych do katalogu
+Summary(pl.UTF-8):	safecat - bezpieczny zapis danych do katalogu
 Name:		safecat
 Version:	1.13
 Release:	1
